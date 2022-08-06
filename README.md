@@ -6,8 +6,9 @@
 
 ### First Term 
 
-* [Unit 2 C programing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_2%20C%20programming)<br>
-* [Unit 3 Embedded C ](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_3%20Embedded%20C/1-%20Lesson%201)<br>
+* [Unit 2 C programing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_2%20C%20programming)
+![](https://us-central1-progress-markdown.cloudfunctions.net/progress/100)<br>
+* [Unit 3 Embedded C ](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_3%20Embedded%20C/1-%20Lesson%201) ![](https://progress-bar.dev/25)<br>
 * [Unit 4 ]<br>
 * [unit 5 ]<br>
 
