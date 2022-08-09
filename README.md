@@ -2,7 +2,7 @@
 ![Certificate](https://user-images.githubusercontent.com/85059419/182784606-b37d4479-76c4-4dd7-ac9d-65596a50def1.png)
 
 *******
-# content 
+# Content 
 
 ## **First Term** ![20%](https://progress-bar.dev/20/?title=progress)
 
