@@ -14,7 +14,7 @@
 
 
 ***
-## **Second Term** ![0%](https://progress-bar.dev/20/?title=Soon)
+## **Second Term** ![0%](https://progress-bar.dev/0/?title=Soon)
 
 * [Unit 6 MCU Fundatmentals](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 7 MCU Essential Peripherials](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
@@ -24,7 +24,7 @@
 * [Unit 11 Apply on Embedded System Jobs](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 
 ***
-## **Third Term** ![0%](https://progress-bar.dev/20/?title=Soon)
+## **Third Term** ![0%](https://progress-bar.dev/0/?title=Soon)
 
 * [Unit 12 Advanced Topics](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 13 Mastering Can Protocol](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
