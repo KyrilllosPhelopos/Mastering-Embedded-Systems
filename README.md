@@ -4,7 +4,7 @@
 *******
 # content 
 
-## **First Term** ![20%](https://progress-bar.dev/20/?title= in progress)
+## **First Term** ![20%](https://progress-bar.dev/20/?title=progress)
 
 * **[Unit 2 C programing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_2%20C%20programming)**
 ![100%](https://progress-bar.dev/100/)<br>
@@ -14,7 +14,7 @@
 
 
 ***
-## **Second Term** ![0%](https://progress-bar.dev/20/?title= soon)
+## **Second Term** ![0%](https://progress-bar.dev/20/?title=Soon)
 
 * [Unit 6 MCU Fundatmentals](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 7 MCU Essential Peripherials](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
@@ -24,7 +24,7 @@
 * [Unit 11 Apply on Embedded System Jobs](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 
 ***
-## **Third Term** ![0%](https://progress-bar.dev/20/?title= soon)
+## **Third Term** ![0%](https://progress-bar.dev/20/?title=Soon)
 
 * [Unit 12 Advanced Topics](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 13 Mastering Can Protocol](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
