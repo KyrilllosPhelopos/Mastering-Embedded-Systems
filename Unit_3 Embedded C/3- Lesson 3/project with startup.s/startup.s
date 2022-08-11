@@ -1,7 +1,4 @@
-/*	startup_cortexM3.s
-*
-*	CopyRight : Mina Karam	
-*/
+
 
 .section .vectors
 
