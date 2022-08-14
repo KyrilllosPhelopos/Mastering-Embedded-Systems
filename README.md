@@ -8,7 +8,7 @@
 
 * **[Unit 2 C programing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_2%20C%20programming)**
 ![100%](https://progress-bar.dev/100/)<br>
-* [Unit 3 Embedded C ](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_3%20Embedded%20C/1-%20Lesson%201) ![](https://progress-bar.dev/50)<br>
+* [Unit 3 Embedded C ](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_3%20Embedded%20C/1-%20Lesson%201) ![](https://progress-bar.dev/100)<br>
 * [Unit 4 System Architect](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems) ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [unit 5 First Term Project](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems) ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 
