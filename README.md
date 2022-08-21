@@ -1,5 +1,5 @@
 # Mastering-Embedded-Systems
-![Certificate](https://user-images.githubusercontent.com/85059419/182784606-b37d4479-76c4-4dd7-ac9d-65596a50def1.png)
+
 
 *******
 # Content 
@@ -33,4 +33,4 @@
 * [Unit 16 Autosar Basics](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 ***
 
-
+![Certificate](https://user-images.githubusercontent.com/85059419/182784606-b37d4479-76c4-4dd7-ac9d-65596a50def1.png)
