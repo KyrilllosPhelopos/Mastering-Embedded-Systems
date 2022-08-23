@@ -16,7 +16,7 @@ void add_student_from_file(FIFO_Buf_t *students_queue)
 	fp = fopen("Students_Data.txt", "r");
 	if(fp == 0)
 	{
-		Dprintf("Error!!!! Cannot open the file\n");
+		Dprintf("Error!!!! Cannot open the file \n");
 		return ;
 	}
 
@@ -25,6 +25,20 @@ void add_student_from_file(FIFO_Buf_t *students_queue)
 	while(!feof(fp))
 	{
 		fscanf(fp , "%d",&new_Student.roll_number);
+
+		int num = new_Student.roll_number;
+		Item temp;
+		if (FIFO_Search_With_Roll(students_queue ,&temp , num ) == 1)
+		{
+			Dprintf("Error!!!! Failed >>(Repeated Roll_No: %d) \n", num);
+
+			// Ignore the rest of the line
+			fscanf(fp, "%*[^\n]");
+
+			// Start over form next line in text file
+			continue ;
+		}
+
 		fscanf(fp , "%s" , new_Student.first_name);
 		fscanf(fp , "%s" , new_Student.last_name);
 		fscanf(fp , "%f" , &new_Student.GPA);
@@ -35,12 +49,14 @@ void add_student_from_file(FIFO_Buf_t *students_queue)
 
 		if((FIFO_Enqueue(students_queue ,  new_Student) == FIFO_NO_ERROR))
 		{
+
 			Dprintf("Student: %d added successfully \n" , new_Student.roll_number);
 		}
 		else
 		{
 			Dprintf("Student: %d Failed to be added  \n" , new_Student.roll_number)
 		}
+
 	}
 	fclose(fp);
 }
@@ -49,33 +65,39 @@ void add_student_from_file(FIFO_Buf_t *students_queue)
 // Enter student data manually from console
 void add_student_manualy(FIFO_Buf_t *students_queue)
 {
-	Item new_student;
+	Item new_Student;
 	Dprintf("Enter Student Roll Number: \n");
-	scanf("%d",&new_student.roll_number);
+	scanf("%d",&new_Student.roll_number);
+	int num = new_Student.roll_number;
+	Item temp;
+	if (FIFO_Search_With_Roll(students_queue ,&temp , num ) == 1)
+	{
+
+		Dprintf("Error!!!! Failed >>(Repeated Roll_No: %d) \n", num);
+		return ;
+	}
 	Dprintf("Enter Student First Name: \n");
-	scanf("%s",new_student.first_name);
+	scanf("%s",new_Student.first_name);
 	Dprintf("Enter Student Last Name: \n");
-	scanf("%s",new_student.last_name);
+	scanf("%s",new_Student.last_name);
 
 	Dprintf("Enter Student GPA: \n");
-	scanf("%f",&new_student.GPA);
+	scanf("%f",&new_Student.GPA);
 
 	for(int i =0 ; i < COURSES_NUMBER ;i++)
 	{
 		Dprintf("Enter Student course: %d ID \n",i+1);
-		scanf( "%d",& new_student.course_id[i]);
+		scanf( "%d",& new_Student.course_id[i]);
 
 	}
-	if((FIFO_Enqueue(students_queue ,  new_student) == FIFO_NO_ERROR))
+	if((FIFO_Enqueue(students_queue ,  new_Student) == FIFO_NO_ERROR))
 	{
-		Dprintf("Student: %d added successfully \n" , new_student.roll_number);
+		Dprintf("Student: %d added successfully \n" , new_Student.roll_number);
 	}
 	else
 	{
-		Dprintf("Student: %d Failed to be added  \n" , new_student.roll_number)
+		Dprintf("Student: %d Failed to be added  \n" , new_Student.roll_number)
 	}
-
-
 }
 
 // Get student date by its roll number
@@ -92,7 +114,7 @@ void find_student_by_roll(FIFO_Buf_t *students_queue)
 		Dprintf("Student Name: %s %s \n",Temp_item.first_name , Temp_item.last_name);
 		Dprintf("Student GPA: %0.2f \n",Temp_item.GPA);
 		Dprintf("Student Courses IDs: ");
-		for(int i = 0 ;i<5 ;i++)
+		for(int i = 0 ;i<COURSES_NUMBER ;i++)
 		{
 			Dprintf(" %d,",Temp_item.course_id[i]);
 		}
@@ -117,7 +139,7 @@ void find_student_by_firstname(FIFO_Buf_t *students_queue)
 		Dprintf("Student Roll_No: %d \n",Temp_item.roll_number);
 		Dprintf("Student GPA: %0.2f \n",Temp_item.GPA);
 		Dprintf("Student Courses IDs: ");
-		for(int i = 0 ;i<5 ;i++)
+		for(int i = 0 ;i<COURSES_NUMBER ;i++)
 		{
 			Dprintf(" %d,",Temp_item.course_id[i]);
 		}
@@ -126,45 +148,44 @@ void find_student_by_firstname(FIFO_Buf_t *students_queue)
 		Dprintf("Student with First Name: %s DOESNOT Exist in the list \n",temp);
 }
 
-int Search_By_Courese(FIFO_Buf_t* queue ,FIFO_DATA_TYPE* item ,int arr [])
-{
-	FIFO_DATA_TYPE * temp = queue->tail;
-	int i=0 , flag=0;
-	while(i<queue->count)
-	{
-		for(int i =0 ;i<5 ;i++)
-		{
-			if(arr[i] != temp->course_id[i])
-			{
-				flag =0;
-				break;
-			}
-			else
-			{
-				flag = 1;
-			}
-
-		}
-
-		if(flag)
-		{
-			*item = *temp;
-			return 1;
-		}
-
-		else
-			temp--;
-
-	}
-
-	return 0;
-}
+//int Search_By_Courese(FIFO_Buf_t* queue ,FIFO_DATA_TYPE* item ,int arr [])
+//{
+//	FIFO_DATA_TYPE * temp = queue->tail;
+//	int i=0 , flag=0;
+//	while(i<queue->count)
+//	{
+//		for(int i =0 ;i<queue->count ;i++)
+//		{
+//			if(arr[i] != temp->course_id[i])
+//			{
+//				flag =0;
+//				break;
+//			}
+//			else
+//			{
+//				flag = 1;
+//			}
+//
+//		}
+//
+//		if(flag)
+//		{
+//			*item = *temp;
+//			return 1;
+//		}
+//
+//		else
+//			temp--;
+//
+//	}
+//
+//	return 0;
+//}
 
 // Get student date by its course
 void find_student_by_course(FIFO_Buf_t *students_queue)
 {
 	int arr [5];
-	Item Temp_item;
 	Dprintf("Enter Student Courses: \n");
 	for(int i = 0;i<5 ;i++)
 	{
@@ -173,21 +194,43 @@ void find_student_by_course(FIFO_Buf_t *students_queue)
 
 
 
-	if(Search_By_Courese(students_queue ,&Temp_item , arr ))
+
+
+	FIFO_DATA_TYPE * temp = students_queue->tail --;
+	int k=0 , flag=0;
+	while(k <= students_queue->count)
 	{
-		Dprintf("Student  with Courses IDs: ");
-		for(int i = 0 ;i<5 ;i++)
+		for(int i =0 ;i<COURSES_NUMBER ;i++)
 		{
-			Dprintf(" ,%d",Temp_item.course_id[i]);
+			if(arr[i] != temp->course_id[i])
+			{
+				flag =0;
+			}
+			else
+			{
+				flag = 1;
+			}
 		}
-		Dprintf(" Exist in the list\n");
-		Dprintf("Student Name: %s %s \n",Temp_item.first_name , Temp_item.last_name);
-		Dprintf("Student Roll_No: %d \n",Temp_item.roll_number);
-		Dprintf("Student GPA: %0.2f \n",Temp_item.GPA);
+
+		if(flag == 1)
+		{
+			Dprintf("Student  with Courses IDs: ");
+			for(int i = 0 ;i<5 ;i++)
+			{
+				Dprintf(" ,%d",temp->course_id[i]);
+			}
+			Dprintf(" Exist in the list\n");
+			Dprintf("Student Name: %s %s \n",temp->first_name , temp->last_name);
+			Dprintf("Student Roll_No: %d \n",temp->roll_number);
+			Dprintf("Student GPA: %0.2f \n",temp->GPA);
+			Dprintf("====================================== \n");
+		}
+
+		temp--;
+		k++;
 
 	}
-	else
-		Dprintf("No Such Student enrolled in those courses \n");
+
 }
 
 // Get students number in queue
@@ -204,21 +247,28 @@ void delete_student_by_roll(FIFO_Buf_t *students_queue)
 	scanf("%d",&num);
 	Item* temp = students_queue->head;
 	int i=0 , flag =0;
-	for( ;i< students_queue->count ;i++)
+	for( ;i<students_queue->count ;i++)
 	{
-		if(temp->roll_number ==num)
+		if(temp[i].roll_number == num)
 		{
 			flag =1;
-			if(temp+1 != students_queue->tail )
+			students_queue->count--;
+			for(int j = i ; j< students_queue->count ; j++)
 			{
-				temp = temp++;
+				temp[j]= temp[j+1];
 			}
+
+			break;
 		}
 	}
 	if(flag ==1)
 	{
-		students_queue->tail--;
-		students_queue->count--;
+
+		if(students_queue->tail == students_queue->base)
+			students_queue->tail = (students_queue->base + (students_queue->length *sizeof(FIFO_DATA_TYPE)));
+		else
+			students_queue->tail--;
+
 		Dprintf("Deleted Successfully \n");
 
 	}
@@ -233,38 +283,42 @@ void update_student_by_roll(FIFO_Buf_t *students_queue)
 	Dprintf("Enter Student Roll Number: \n");
 	scanf("%d",&num);
 
-	Item Temp_item ;
-	Item temp;
-	if (FIFO_Search_With_Roll(students_queue , &temp , num) == 1)
+	Item* temp =students_queue->head ;
+	Item student;
+	for( int i=0;i<students_queue->count ;i++)
 	{
-		Dprintf("Enter Student Roll Number: \n");
-		scanf("%d",&Temp_item.roll_number);
-		Dprintf("Enter Student First Name: \n");
-		scanf("%s",Temp_item.first_name);
-		Dprintf("Enter Student Last Name: \n");
-		scanf("%s",Temp_item.last_name);
-
-		Dprintf("Enter Student GPA: \n");
-		scanf("%f",&Temp_item.GPA);
-
-		*temp.first_name = Temp_item.first_name;
-		*temp.last_name = Temp_item.last_name;
-		temp.roll_number = Temp_item.roll_number;
-		temp.GPA = Temp_item.GPA;
-
-		for(int i =0 ; i < COURSES_NUMBER ;i++)
+		if(temp[i].roll_number == num)
 		{
-			Dprintf("Enter Student course: %d ID \n",i+1);
-			scanf( "%d",& Temp_item.course_id[i]);
-			temp.course_id[i] = Temp_item.course_id[i];
+			Dprintf("Enter Student Roll Number: \n");
+			scanf("%d",&student.roll_number);
+			Dprintf("Enter Student First Name: \n");
+			scanf("%s",temp[i].first_name);
+			Dprintf("Enter Student Last Name: \n");
+			scanf("%s",temp[i].last_name);
 
+			Dprintf("Enter Student GPA: \n");
+			scanf("%f",&student.GPA);
+
+			for(int j =0 ; j < COURSES_NUMBER ;j++)
+			{
+				Dprintf("Enter Student course: %d ID \n",i+1);
+				scanf( "%d",& student.course_id[j]);
+				temp[i].course_id[j]= student.course_id[j];
+
+			}
+
+			temp[i].roll_number= student.roll_number;
+			temp[i].GPA = student.GPA;
+
+			Dprintf("Updated Successfully \n");
+			return ;
 		}
-		Dprintf("Updated Successfully \n");
+
 	}
-	else
-	{
-		Dprintf("No such student with this Roll_No \n");
-	}
+
+	Dprintf("Failed To Update \n");
+
+
 }
 
 
@@ -307,39 +361,41 @@ void view_all(FIFO_Buf_t *students_queue)
 
 
 
-	int FIFO_Search_With_Roll(FIFO_Buf_t* queue ,Item* item ,int n)
+int FIFO_Search_With_Roll(FIFO_Buf_t* students_queue ,Item* item ,int n)
+{
+	FIFO_DATA_TYPE * temp = students_queue->tail;
+	int i=0;
+	while(i < students_queue->count)
 	{
-		FIFO_DATA_TYPE * temp = queue->tail;
-		int i=0;
-		while(i<queue->count)
+		if(temp->roll_number == n)
 		{
-			if(temp->roll_number == n)
-			{
-				*item = *temp;
-				return 1;
-			}
-			temp--;
+			*item = *temp;
+			return 1;
 		}
-
-		return 0;
+		temp--;
+		i++;
 	}
 
-	int FIFO_Search_With_Fname(FIFO_Buf_t* queue ,Item* item ,char str [])
-	{
-		FIFO_DATA_TYPE * temp = queue->tail;
-		int i=0;
-		while(i<queue->count)
-		{
-			if( ! strcmp(temp->first_name , str))
-			{
-				*item =* temp;
-				return 1;
-			}
-			temp--;
-		}
+	return 0;
+}
 
-		return 0;
+int FIFO_Search_With_Fname(FIFO_Buf_t* students_queue ,Item* item ,char str [])
+{
+	FIFO_DATA_TYPE * temp = students_queue->tail;
+	int i=0;
+	while(i<students_queue->count)
+	{
+		if( ! strcmp(temp->first_name , str))
+		{
+			*item =* temp;
+			return 1;
+		}
+		temp--;
+		i++;
 	}
+
+	return 0;
+}
 
 
 
