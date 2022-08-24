@@ -4,7 +4,7 @@
 *******
 # Content 
 
-## **First Term** ![90%](https://progress-bar.dev/100/?title=progress)
+## **First Term** ![90%](https://progress-bar.dev/100/?title=Done)
 
 * **[Unit 2 C programing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_2%20C%20programming)**
 ![100%](https://progress-bar.dev/100/)<br>
@@ -14,7 +14,7 @@
 
 
 ***
-## **Second Term** ![0%](https://progress-bar.dev/0/?title=Soon)
+## **Second Term** ![0%](https://progress-bar.dev/5/?title=ON_Progress)
 
 * [Unit 6 MCU Fundatmentals](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 7 MCU Essential Peripherials](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
