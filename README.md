@@ -6,17 +6,24 @@
 
 ## **First Term** ![90%](https://progress-bar.dev/100/?title=Done)
 
+
 * **[Unit 2 C programing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_2%20C%20programming)**
 ![100%](https://progress-bar.dev/100/)<br>
-* [Unit 3 Embedded C ](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/1032d9d28882df12870355d0d769206e58b2f5a6/Unit_3%20Embedded%20C/1-%20Lesson%201) ![](https://progress-bar.dev/100)<br>
-* [Unit 4 System Architect](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems) ![](https://progress-bar.dev/100)<br>
-* [unit 5 First Term Project](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems) ![](https://progress-bar.dev/100)<br>
+
+
+* [Unit 3 Embedded C ](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/master/Unit_3%20Embedded%20C) ![](https://progress-bar.dev/100)<br>
+
+
+* [Unit 4 System Architect](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/master/Unit_4%20System%20Architecture) ![](https://progress-bar.dev/100)<br>
+
+
+* [unit 5 First Term Project](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/master/Unit_5%20First%20Term%20Projects) ![](https://progress-bar.dev/100)<br>
 
 
 ***
-## **Second Term** ![0%](https://progress-bar.dev/5/?title=ON_Progress)
+## **Second Term** ![0%](https://progress-bar.dev/10/?title=ON_Progress)
 
-* [Unit 6 MCU Fundatmentals](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
+* [Unit 6 MCU Fundatmentals](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/master/Unit_6%20MCU%20Fundamentals)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/75)<br>
 * [Unit 7 MCU Essential Peripherials](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 8 MCU Interfacing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 9 MCU Timer/ADC](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
