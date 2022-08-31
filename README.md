@@ -1,5 +1,7 @@
 # Mastering-Embedded-Systems
 
+![Screenshot 2022-08-31 095928](https://user-images.githubusercontent.com/85059419/187625016-ed3e7b39-6ea4-4d3d-af0b-52b2d8296e25.png)
+
 
 *******
 # Content 
@@ -21,9 +23,9 @@
 
 
 ***
-## **Second Term** ![0%](https://progress-bar.dev/10/?title=ON_Progress)
+## **Second Term** ![0%](https://progress-bar.dev/20/?title=ON_Progress)
 
-* [Unit 6 MCU Fundatmentals](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/master/Unit_6%20MCU%20Fundamentals)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/75)<br>
+* [Unit 6 MCU Fundatmentals](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/master/Unit_6%20MCU%20Fundamentals)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/100)<br>
 * [Unit 7 MCU Essential Peripherials](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 8 MCU Interfacing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 9 MCU Timer/ADC](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
