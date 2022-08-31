@@ -1,6 +1,10 @@
 # Mastering-Embedded-Systems
 
 ![Screenshot 2022-08-31 095928](https://user-images.githubusercontent.com/85059419/187625016-ed3e7b39-6ea4-4d3d-af0b-52b2d8296e25.png)
+<br><br>
+# <p align = "center"><fint size = 30pt>[My Page In Learn In Depth](https://www.learn-in-depth.com/online-diploma/kyrillos.sawiris99%40gmail.com)</font></p>
+<br>
+
 
 
 *******
