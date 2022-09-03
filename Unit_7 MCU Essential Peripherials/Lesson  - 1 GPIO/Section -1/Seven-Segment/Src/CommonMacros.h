@@ -1,0 +1,19 @@
+/*
+ * CommonMacros.h
+ *
+ * Created: 9/3/2022 4:10:32 PM
+ *  Author: Kyrillos Sawiris
+ */ 
+
+
+#ifndef COMMONMACROS_H_
+#define COMMONMACROS_H_
+
+
+#define SET_BIT(ADDRESS,VALUE,BIT_NUMBER)      ADDRESS |= (VALUE << BIT_NUMBER)
+#define RESET_BIT(ADDRESS,VALUE,BIT_NUMBER)    ADDRESS &=~(VALUE << BIT_NUMBER)
+#define TOGGLE_BIT(ADDRESS,VALUE,BIT_NUMBER)   ADDRESS ^= (VALUE << BIT_NUMBER)
+#define READ_BIT(ADDRESS,VALUE,BIT_NUMBER)    ((ADDRESS & (VALUE << BIT_NUMBER))>> BIT_NUMBER)
+
+
+#endif /* COMMONMACROS_H_ */
