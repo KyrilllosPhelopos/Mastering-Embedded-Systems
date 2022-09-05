@@ -1,8 +1,7 @@
 # Mastering-Embedded-Systems
 
-![learn in depth](https://user-images.githubusercontent.com/85059419/188476175-7d53bd12-b778-447a-83ab-f496cc59a1a9.png)
-
-<br><br>
+![learnindepth](https://user-images.githubusercontent.com/85059419/188477348-5f1315d0-458c-464c-b079-ac1d32bb103c.png)
+<br>
 # <p align = "center"><fint size = 30pt>[My Page In Learn In Depth](https://www.learn-in-depth.com/online-diploma/kyrillos.sawiris99%40gmail.com)</font></p>
 <br>
 
