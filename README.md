@@ -1,6 +1,7 @@
 # Mastering-Embedded-Systems
 
-![Screenshot 2022-08-31 095928](https://user-images.githubusercontent.com/85059419/187625016-ed3e7b39-6ea4-4d3d-af0b-52b2d8296e25.png)
+![learn in depth](https://user-images.githubusercontent.com/85059419/188476175-7d53bd12-b778-447a-83ab-f496cc59a1a9.png)
+
 <br><br>
 # <p align = "center"><fint size = 30pt>[My Page In Learn In Depth](https://www.learn-in-depth.com/online-diploma/kyrillos.sawiris99%40gmail.com)</font></p>
 <br>
@@ -46,4 +47,5 @@
 * [Unit 16 Autosar Basics](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 ***
 
-![Certificate](https://user-images.githubusercontent.com/85059419/182784606-b37d4479-76c4-4dd7-ac9d-65596a50def1.png)
+![certificate](https://user-images.githubusercontent.com/85059419/188476191-fba6bd4b-3af6-4f27-a3ee-2f79706c6b75.png)
+
