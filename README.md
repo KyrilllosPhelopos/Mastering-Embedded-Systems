@@ -27,11 +27,11 @@
 
 
 ***
-## **Second Term** ![0%](https://progress-bar.dev/20/?title=ON_Progress)
+## **Second Term** ![0%](https://progress-bar.dev/65/?title=ON_Progress)
 
 * [Unit 6 MCU Fundatmentals](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems/tree/master/Unit_6%20MCU%20Fundamentals)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/100)<br>
-* [Unit 7 MCU Essential Peripherials](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
-* [Unit 8 MCU Interfacing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
+* [Unit 7 MCU Essential Peripherials](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/100)<br>
+* [Unit 8 MCU Interfacing](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/50)<br>
 * [Unit 9 MCU Timer/ADC](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 10 SW Testing/Validation](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
 * [Unit 11 Apply on Embedded System Jobs](https://github.com/KyrilllosPhelopos/Mastering-Embedded-Systems)![](https://us-central1-progress-markdown.cloudfunctions.net/progress/0)<br>
